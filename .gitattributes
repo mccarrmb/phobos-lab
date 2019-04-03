@@ -1,0 +1,9 @@
+# Enforce LF as line terminator
+* text     eol=lf
+
+# Binary assets
+*.png      binary
+
+# Everything is JSON, GitHub.
+.compilerc linguist-language=json
+.eslintrc  linguist-language=json
