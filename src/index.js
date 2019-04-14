@@ -9,10 +9,13 @@ if (require('electron-squirrel-startup')) { // eslint-disable-line global-requir
 // be closed automatically when the JavaScript object is garbage collected.
 let mainWindow;
 
+// TODO: This guy should be a build thingy, not a code flag.
+let DEBUG = true;
+
 const createWindow = () => {
   // Create the browser window.
   mainWindow = new BrowserWindow({
-    width: 800,
+    width: (DEBUG ? 1200 : 800),
     height: 600,
   });
 

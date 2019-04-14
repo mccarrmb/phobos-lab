@@ -5,8 +5,11 @@
     <title>Phobos Lab</title>
     <link rel="stylesheet" type="text/css" href="css/default.css"></link>
   </head>
-  <body>
+  <body onload="getExe()">
     <form onsubmit="run()">
+      <label for="sourceport">Sourceport:</label>
+      <input type="text" id="sourceport" value="B:\Doom\bin\gzdoom\gzdoom.exe">
+      <label for="parameters">Parameters:</label>
       <input type="text" id="parameters" value="-iwad '~/Library/Application Support/gzdoom/plutonia.wad'">
       <input type="submit" value="Launch GZDoom">
     </form>
