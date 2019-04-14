@@ -18,7 +18,7 @@ function getExe(){
   else{
     //assumes unixy systems like bsd, linux, and solaris(lol)
     document.getElementById("sourceport").value = '/usr/games/gzdoom';
-    document.getElementById("parameters").value = '-iwad ~/.gzdoom/doom.wad';
+    document.getElementById("parameters").value = '-iwad ~/.config/gzdoom/doom.wad';
   }
 }
 
