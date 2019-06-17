@@ -15,15 +15,15 @@ let DEBUG = true;
 const createWindow = () => {
   // Create the browser window.
   mainWindow = new BrowserWindow({
-    width: (DEBUG ? 1200 : 800),
+    width: 800,
     height: 600,
   });
 
   // and load the index.html of the app.
   mainWindow.loadURL(`file://${__dirname}/index.html`);
 
-  // Open the DevTools.
-  mainWindow.webContents.openDevTools();
+  // Open the DevTools if DEBUG is true.
+  DEBUG && mainWindow.webContents.openDevTools();
 
   // Emitted when the window is closed.
   mainWindow.on('closed', () => {

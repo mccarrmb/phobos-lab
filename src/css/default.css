@@ -3,8 +3,22 @@ body {
   text-align: center;
   color: #aaaaaa;
   background-color: #444444;
+  background-image: url("../img/phobos.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  height: max-content;
 }
 
 h1 {
   font-weight: 500;
+}
+
+header {
+  background-color: #111111
+}
+
+article {
+  height: 90%;
+  width: 90%;
+  grid-column: auto;
 }
