@@ -1,6 +1,6 @@
 {
-  "name": "phobos-lab",
-  "productName": "Phobos Lab",
+  "name": "io.redpoloshirts.phoboslab",
+  "productName": "io.redpoloshirts.phoboslab",
   "version": "1.0.0",
   "description": "Doom Launcher",
   "main": "src/index.js",
