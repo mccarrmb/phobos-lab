@@ -32,17 +32,17 @@
         "packageManager": "npm"
       },
       "electronWinstallerConfig": {
-        "name": "Phobos Lab"
+        "name": "PhobosLab"
       },
       "electronInstallerDebian": {},
       "electronInstallerRedhat": {},
       "github_repository": {
-        "owner": "",
-        "name": ""
+        "owner": "mccarrmb/phobos-lab",
+        "name": "Phobos Lab"
       },
       "windowsStoreConfig": {
-        "packageName": "",
-        "name": "Phobos Lab"
+        "packageName": "io.redpoloshirts.phoboslab",
+        "name": "PhobosLab"
       }
     }
   },
