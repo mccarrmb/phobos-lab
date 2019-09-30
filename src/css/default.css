@@ -3,9 +3,9 @@ body {
   text-align: center;
   color: #aaaaaa;
   background-color: #444444;
-  background-image: url("../img/phobos.png");
+  background-image: url("../img/phobos_px.png");
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: 50% 0%;
   height: max-content;
 }
 

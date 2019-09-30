@@ -1,3 +1,5 @@
+/* eslint-disable no-unused-vars */
+/* eslint-disable no-undef */
 const { exec } = require('child_process');
 const os = require('os');
 
@@ -10,12 +12,12 @@ function getExe() {
     document.getElementById('sourceport').value = 'B:\\Doom\\bin\\gzdoom\\gzdoom.exe';
     document.getElementById('parameters').value = '-iwad B:\\Doom\\data\\doom.wad';
   } else if (os.platform() === 'darwin') {
-    document.getElementById('sourceport').value = os.homedir() + '/Applications/GZDoom.app';
-    document.getElementById('parameters').value = '-iwad \"' + os.homedir() + '/Library/Application Support/gzdoom/doom.wad\"';
+    document.getElementById('sourceport').value = `${os.homedir()}/Applications/GZDoom.app`;
+    document.getElementById('parameters').value = `-iwad "${os.homedir()}/Library/Application Support/gzdoom/doom.wad"`;
   } else {
     // assumes unixy systems like bsd, linux, and solaris(lol)
     document.getElementById('sourceport').value = '/usr/games/gzdoom';
-    document.getElementById('parameters').value = '-iwad ' + os.homedir() + '/.config/gzdoom/doom.wad';
+    document.getElementById('parameters').value = `-iwad "${os.homedir()}/.config/gzdoom/doom.wad"`;
   }
 }
 
@@ -23,13 +25,14 @@ function getExe() {
 // Executes the specified sourceport as a child_process
 // with parameters derived from interface
 // TODO: Implement detection and handling for macOS '.app' format
+// (even doomseeker doesn't handle this intuitively)
 function run() {
-  let srcprt = (os.platform() === 'darwin' ? 'open ' : '') + document.getElementById('sourceport').value;
-  let params = document.getElementById('parameters').value;
+  const srcprt = (os.platform() === 'darwin' ? `open ${document.getElementById('sourceport').value} --args ` : document.getElementById('sourceport').value);
+  const params = document.getElementById('parameters').value;
   // shell.openItem('/Applications/GZDoom.app ' + params);
   console.log(srcprt);
   console.log(params);
-  return exec((srcprt + ' ' + params), (error, stdout, stderr) => {
+  return exec((`${srcprt} ${params}`), (error, stdout, stderr) => {
     if (error) {
       console.error(`exec error: ${error}`);
       return;
