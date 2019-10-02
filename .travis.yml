@@ -6,8 +6,8 @@ matrix:
         - 12.10.0
       sudo: true
       before_install: 
-        - apt update && apt upgrade
-        - apt install rpm
+        - sudo apt update && apt upgrade
+        - sudo apt install rpm
       before_script: 
         - npm install --global electron-forge
         - npm install
