@@ -1,6 +1,6 @@
 matrix:
   include:
-    # Linux build
+    # Linux build (Ubuntu default)
     - language: node_js
       node_js:
         - 12.10.0
@@ -21,11 +21,12 @@ matrix:
         - npm install --global electron-forge
         - npm install
       script: electron-forge make
-    #  script: ./js-checks.bash
-    ## macOS build
-    #- language: node_js
-    #  os: osx
-    #  node_js:
-    #    - 12.10.0
-    #  sudo: true
-    #  script: ./js-checks.bash
+    # macOS build
+    - language: node_js
+      os: osx
+      node_js:
+        - 12.10.0
+      before_script: 
+        - npm install --global electron-forge
+        - npm install
+      script: electron-forge make
