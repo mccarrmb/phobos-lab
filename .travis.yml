@@ -1,0 +1,32 @@
+matrix:
+  include:
+    # Linux build (Ubuntu default)
+    - language: node_js
+      node_js:
+        - 12.10.0
+      sudo: true
+      before_install: 
+        - sudo apt update
+        - sudo apt install rpm fakeroot
+      before_script: 
+        - npm install --global electron-forge
+        - npm install
+      script: electron-forge make
+    # Windows build
+    - language: node_js
+      os: windows
+      node_js:
+        - 12.10.0
+      before_script: 
+        - npm install --global electron-forge
+        - npm install
+      script: electron-forge make
+    # macOS build
+    - language: node_js
+      os: osx
+      node_js:
+        - 12.10.0
+      before_script: 
+        - npm install --global electron-forge
+        - npm install
+      script: electron-forge make
