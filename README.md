@@ -1,5 +1,7 @@
 # Phobos Lab
 
+<img src="travis-ci.org/mccarrmb/phobos-lab.svg?branch=master">
+
 An Electron-based application for sourceport and mod profile organization.
 
 ## Requirements
