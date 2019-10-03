@@ -6,7 +6,7 @@ An Electron-based application for sourceport and mod profile organization.
 
 ## Requirements
 
-Phobos Lab currently supports GZDoom with any shareware or commercial IWAD. The application is currently built to run on Windows, Linux, and macOS (all builds are amd64).
+Phobos Lab currently supports GZDoom with any shareware or commercial IWAD. The application is built to run on Windows, Linux, and macOS (all builds are amd64).
 
 ### Build Requirements
 
