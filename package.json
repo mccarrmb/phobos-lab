@@ -29,6 +29,7 @@
         ]
       },
       "electronPackagerConfig": {
+        "executableName": "PhobosLab",
         "packageManager": "npm"
       },
       "electronWinstallerConfig": {
