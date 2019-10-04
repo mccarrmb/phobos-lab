@@ -1,5 +1,5 @@
 {
-  "name": "phobos-lab",
+  "name": "phoboslab",
   "productName": "PhobosLab",
   "version": "1.0.0",
   "description": "Doom Launcher",
@@ -29,7 +29,7 @@
         ]
       },
       "electronPackagerConfig": {
-        "executableName": "PhobosLab",
+        "executableName": "phoboslab",
         "packageManager": "npm"
       },
       "electronWinstallerConfig": {
