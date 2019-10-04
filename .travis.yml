@@ -9,7 +9,7 @@ matrix:
         - sudo apt update
         - sudo apt install rpm fakeroot
       before_script: 
-        - npm install --global electron-forge
+        - npm install --global electron electron-forge
         - npm install
       script: electron-forge make
     # Windows build
