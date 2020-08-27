@@ -12,9 +12,7 @@ Phobos Lab currently supports GZDoom with any shareware or commercial IWAD. The 
 
 Phobos Lab is an Electron Forge project designed to be multi-platform friendly, but not necessarily agnostic. All development environments will have the following requirements:
 
-* NodeJS v8.15.1+
-
-* Electron Forge 5.2.4+ (installed globally)
+* NodeJS v14.5.0+
 
 #### Linux Requirements
 
