@@ -3,7 +3,7 @@ matrix:
     # Linux build (Ubuntu default)
     - language: node_js
       node_js:
-        - 12.10.0
+        - 14.5.0
       sudo: true
       before_install: 
         - sudo apt update
@@ -16,7 +16,7 @@ matrix:
     - language: node_js
       os: windows
       node_js:
-        - 12.10.0
+        - 14.5.0
       before_script: 
         - npm install --global electron-forge
         - npm install
@@ -25,7 +25,7 @@ matrix:
     - language: node_js
       os: osx
       node_js:
-        - 12.10.0
+        - 14.5.0
       before_script: 
         - npm install --global electron-forge
         - npm install
