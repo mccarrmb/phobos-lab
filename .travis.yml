@@ -7,7 +7,7 @@ matrix:
       sudo: true
       before_install: 
         - sudo apt update
-        - sudo apt install rpm fakeroot
+        - sudo apt install fakeroot
       before_script: 
         - npm install --global electron-forge
         - npm install
