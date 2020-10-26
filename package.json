@@ -2,8 +2,9 @@
   "name": "phobos-lab",
   "productName": "phobos-lab",
   "version": "0.0.0",
-  "description": "Classic Doom game launcher",
+  "description": "Classic Doom mod launcher",
   "main": "dist/index.js",
+  "repository": "github:mccarrmb/phobos-lab",
   "scripts": {
     "start": "tsc && electron-forge start",
     "package": "electron-forge package",
@@ -41,32 +42,19 @@
     }
   },
   "devDependencies": {
-    "@electron-forge/cli": "^6.0.0-beta.53",
-    "@electron-forge/maker-deb": "^6.0.0-beta.53",
-    "@electron-forge/maker-squirrel": "^6.0.0-beta.53",
-    "@electron-forge/maker-zip": "^6.0.0-beta.53",
+    "@electron-forge/cli": "^6.0.0-beta.54",
+    "@electron-forge/maker-deb": "^6.0.0-beta.54",
+    "@electron-forge/maker-squirrel": "^6.0.0-beta.54",
+    "@electron-forge/maker-zip": "^6.0.0-beta.54",
     "@typescript-eslint/eslint-plugin": "^2.34.0",
     "@typescript-eslint/parser": "^2.34.0",
     "electron": "10.0.0",
     "electron-prebuilt-compile": "8.2.0",
-    "eslint": "^7.7.0",
-    "eslint-plugin-import": "^2.22.0",
-    "typescript": "^4.0.2"
+    "eslint": "^7.12.0",
+    "eslint-plugin-import": "^2.22.1",
+    "typescript": "^4.0.3"
   },
   "dependencies": {
     "electron-squirrel-startup": "^1.0.0"
-(??)  },
-(??)  "devDependencies": {
-(??)    "babel-plugin-transform-async-to-generator": "^6.24.1",
-(??)    "babel-preset-env": "^1.7.0",
-(??)    "babel-preset-react": "^6.24.1",
-(??)    "electron-forge": "^5.2.4",
-(??)    "electron-prebuilt-compile": "4.0.0",
-(??)    "electron-squirrel-startup": "^1.0.0",
-(??)    "eslint": "^3.19.0",
-(??)    "eslint-config-airbnb": "^15.1.0",
-(??)    "eslint-plugin-import": "^2.18.2",
-(??)    "eslint-plugin-jsx-a11y": "^5.1.1",
-(??)    "eslint-plugin-react": "^7.14.3"
   }
 }
