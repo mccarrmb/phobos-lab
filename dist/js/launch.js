@@ -24,7 +24,6 @@ function getExe() {
 // run()
 // Executes the specified sourceport as a child_process
 // with parameters derived from interface
-// TODO: Implement detection and handling for macOS '.app' format
 // (even doomseeker doesn't handle this intuitively)
 function run() {
     var srcprt = (os.platform() === 'darwin' ? "open " + document.getElementById('sourceport').value + " --args " : document.getElementById('sourceport').value);
@@ -40,5 +39,11 @@ function run() {
         console.log("stdout: " + stdout);
         console.log("stderr: " + stderr);
     });
+}
+function createMacOSConfigurationFile() {
+}
+function createLinuxConfigurationFile() {
+}
+function createWindowsConfigurationFile() {
 }
 //# sourceMappingURL=launch.js.map
